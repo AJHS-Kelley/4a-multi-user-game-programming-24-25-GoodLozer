@@ -14,9 +14,28 @@ class guessNumber {
     while(numGuess < maxGuess) 
     {
         Console.WriteLine("Please guess an integer between 0 and 69\n"); 
-        guess = Convert.ToInt32(console.ReadLine());
+        guess = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine(guess);
-        numGuess++
+
+        numGuess++;
+        if (guess < secretNumber)
+        {
+            Console.WriteLine("Your guess is to low!\n");
+        }
+        else if (guess > secretNumber)
+        {
+           Console.WriteLine("Your guess is to High!\n");
+        }
+        else
+        {
+            Console.WriteLine("Correct!\n");
+            break; //keyword to immedeantly exit loops
+        }
+
+        if (numGuess >= maxGuess)
+        {
+            Console.WriteLine("You lost the game. \n your punishment has been determined, to the elecric chair with you\n");
+        }
     }
       // allow the user to guess the number 
       //Compare the guess to the secret number 
@@ -27,4 +46,3 @@ class guessNumber {
 
 
   }
-}
