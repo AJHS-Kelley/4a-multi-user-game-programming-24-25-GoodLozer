@@ -1,48 +1,54 @@
 using System;
-class guessNumber {
-  static void Main() {
-    int numGuess = 0;
-    int maxGuess = 3;
-    int guess; 
+class Strings {
+    static void Main() { 
+    // In C# ALL STRINGS MUST USE DOUBLE-QUOTES " "
 
-    // Generate a secret number here
-    Random rnd = new Random(); // Create an object named 'rnd' that is a copy of the Random() class.
-    int secretNumber = rnd.Next(70); // generate from 0 to 69
-    //console.WriteLine(secretNumber) //Comment out after testing
-    //int secretNumber = rnd.Next(25,1000); generate from, 25 to 999
+    string greeting = "Hello, how are you? Nice weather we got don't you think?\n";
+    string goodbye = "See you later alligator.\n";
 
-    while(numGuess < maxGuess) 
+    // In C# strings are treated like an OBJECT that has properties and methods.
+    // PROPERTIES -- things that describe the object such as length, values, data type, etc.
+    // METHODS -- built in functions related to that object
+
+    // Length is an important property for strings.
+    Console.WriteLine(greeting.Length);
+    Console.WriteLine(goodbye.Length);
+
+    if (greetinf.Length > goodbye.Length);
     {
-        Console.WriteLine("Please guess an integer between 0 and 69\n"); 
-        guess = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine(guess);
-
-        numGuess++;
-        if (guess < secretNumber)
-        {
-            Console.WriteLine("Your guess is to low!\n");
-        }
-        else if (guess > secretNumber)
-        {
-           Console.WriteLine("Your guess is to High!\n");
-        }
-        else
-        {
-            Console.WriteLine("Correct!\n");
-            break; //keyword to immedeantly exit loops
-        }
-
-        if (numGuess >= maxGuess)
-        {
-            Console.WriteLine("You lost the game. \n your punishment has been determined, to the elecric chair with you\n");
-        }
+        Console.WriteLine("The greeting has more characters than goodbye");
     }
-      // allow the user to guess the number 
-      //Compare the guess to the secret number 
-      // If match print win, if > or < give a hint
-      //+1 to numGuess
-      //Check if numguess > maxGuess
-      // if true print a lose game message if false guess again 
+      // Usefull string methoods
+
+      Console.WriteLine(greetingToUpper()); //Make entire string Upercase 
+      Console.WriteLine(GreetingToLower()); //make entire sting lowercase
+
+      //String Concatanation
+      string comboString = greeting + goodbye; 
+      Console.WriteLine(comboString)
+
+      // String Concatenation methood #2 
+      string comboString2 = string.Concat(greeting,goodbye);
+      Console.WriteLine(comboString2); 
+
+      String Interpolation -- Subtituting variables into strings
+      string comboString3 = $"My greeting is {greeting} and my goodbye is {goodbye}\n";
+      Console.WriteLine(comboString3)
 
 
-  }
+      // SUbsituting Vaiables into Strings methood 2 
+      Conseole.WriteLine("My greeting is " + greeting + "and my goodbye is " + goodbye + ".\n");
+
+      //Accessing parts of strings
+      //Index is the spesefic location of a character in a strin
+      //All string indexes start at 0  
+      Console.WriteLine(Goodbye[0]); // Print character index at 0. 
+      Console.WriteLine(Goodbye[4]); // replace x with what to print the 5th Char 
+
+      // Where is it in my string 
+      Console.WriteLine(greeting.IndexOf("y"));
+      
+
+    }
+
+ }
