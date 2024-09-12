@@ -1,10 +1,10 @@
 using System;
 class Strings {
-    static void Main() { 
-    // In C# ALL STRINGS MUST USE DOUBLE-QUOTES " "
+  static void Main() {
+    // In C# ALL STRINGS MUST USE DOUBLE-QUOTES "  "
 
-    string greeting = "Hello, how are you? Nice weather we got don't you think?\n";
-    string goodbye = "See you later alligator.\n";
+    string greeting = "Hello, What's your name?\n";
+    string goodbye = "Bye.\n";
 
     // In C# strings are treated like an OBJECT that has properties and methods.
     // PROPERTIES -- things that describe the object such as length, values, data type, etc.
@@ -14,50 +14,47 @@ class Strings {
     Console.WriteLine(greeting.Length);
     Console.WriteLine(goodbye.Length);
 
-    if (greeting.Length > goodbye.Length);
+    if (greeting.Length > goodbye.Length)
     {
-        Console.WriteLine("The greeting has more characters than goodbye");
+      Console.WriteLine("The greeting has more characters than the goodbye.\n");
     }
-      // Usefull string methoods
 
-      Console.WriteLine(greetingToUpper()); //Make entire string Upercase 
-      Console.WriteLine(GreetingToLower()); //make entire sting lowercase
+    // Useful String Methods
 
-      //String Concatanation
-      string comboString = greeting + goodbye; 
-      Console.WriteLine(comboString);
+    Console.WriteLine(greeting.ToUpper()); // Make entire string UPPERCASE
+    Console.WriteLine(greeting.ToLower()); // Make entire string lowercase
 
-      // String Concatenation methood #2 
-      string comboString2 = string.Concat(greeting,goodbye);
-      Console.WriteLine(comboString2); 
+    // String Concatenation "Con-Cat-Uh-Nation"
+    string comboString = greeting + goodbye;
+    Console.WriteLine(comboString);
 
-      // String Interpolation -- Subtituting variables into strings
-      string comboString3 = $"My greeting is {greeting} and my goodbye is {goodbye}\n";
-      Console.WriteLine(comboString3)
+    // String Conactenation Method #2
+    string comboString2 = string.Concat(greeting, goodbye);
+    Console.WriteLine(comboString2);
 
+    // String Interpolation -- Substituting variables into strings.
+    string comboString3 = $"My greeting is {greeting} and my goodbye is {goodbye}.\n";
+    Console.WriteLine(comboString3);
 
-      // SUbsituting Vaiables into Strings methood 2 
-      Console.WriteLine("My greeting is " + greeting + "and my goodbye is " + goodbye + ".\n");
+    // Substituting Variables into Strings Method 2
+    Console.WriteLine("My greeting is " + greeting + "and my goodbye is " + goodbye + ".\n");
 
-      //Accessing parts of strings
-      //Index is the spesefic location of a character in a strin
-      //All string indexes start at 0  
-      Console.WriteLine(Goodbye[0]); // Print character index at 0. 
-      Console.WriteLine(Goodbye[4]); // replace x with what to print the 5th Char 
+    // Accessing Parts of Strings
+    // index is a specific location of a character in a string
+    // ALL string indexes start at 0
+    Console.WriteLine(goodbye[0]); // Print the character at index 0.
+    Console.WriteLine(goodbye[4]); // Replace x with what to print the 5th char?
 
-      // Where is it in my string 
-      Console.WriteLine(greeting.IndexOf("y"));
+    // Where is it in my string?
+    Console.WriteLine(greeting.IndexOf("y"));
+    // Finding parts of a string
+    string fullName = "Billy Mays";
 
-      // Finding parts of a string
-      string fullName = "Billy Mays";
+    // What letter?
+    int lastInitial = fullName.IndexOf("M");
 
-      //what letter
-      int lastInitial = fullName.IndexOf("M");
+    // Find the substring.
+    string lastName = fullName.Substring(lastInitial);
 
-      //FInd the Substing
-      string lastName = fullName.Substring(lastInitial);
-
-      //print it
-      Console.WriteLine(lastName);     
-
-    }
+    // Print it.
+    Console.WriteLine(lastName);
