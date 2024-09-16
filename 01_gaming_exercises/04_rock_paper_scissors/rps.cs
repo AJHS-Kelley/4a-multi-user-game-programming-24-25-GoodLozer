@@ -11,6 +11,8 @@ class rps {
       string paper = "paper";
       string scissors = "scissors";
       string rps; 
+      Console.ReadLine();
+      Console.WriteLine ("Your player name is" + playerName)
 
 
 
@@ -18,7 +20,7 @@ class rps {
 
       while(playerScore || cpuScore != 5) 
     {
-        Console.WriteLine("Rock beats Scissors, Scissors beats Paper, and Paper beats Rock. The winner scores a point. If each player picks the same no points are awarded.The first player to five points wins\n"); 
+        Console.WriteLine("Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.\n The winner scores a point. If each player picks the same no points are awarded.\n The first player to five points wins\n"); 
     
         if (playerChoice = "rock" && cpuChoice = "scissors")
         {
@@ -49,7 +51,7 @@ class rps {
         }
 
         {
-        else if (cpuChoice = "paper" && playerChoice = "rock")
+        else (cpuChoice = "paper" && playerChoice = "rock")
         
             cpuScore + 1;
             Console.WriteLine("Score is\n" playerScore +, cpuScore);
