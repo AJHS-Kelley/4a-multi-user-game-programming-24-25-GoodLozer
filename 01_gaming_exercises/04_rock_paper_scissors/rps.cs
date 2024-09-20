@@ -70,11 +70,59 @@ class rps {
         if (playerChoice = "rock" && cpuChoice = "paper")
         {
             Console.WriteLine($"You chose {playerChoice} and the CPU chose {cpuChoice}.\n");
-            Console.WriteLine("The CPU wins. \n");
+            Console.WriteLine("The CPU wins.\n");
             cpuScore++;
         }
-      
+        else if (playerChoice = "rock" && cpuChoice = "rock")
+        {
+            Console.WriteLine($"You chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+            Console.WriteLine("Its a tie.\n");
+            
         }
+        else if (playerChoice = "rock" && cpuChoice = "scissors")
+        {
+            Console.WriteLine($"You chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+            Console.WriteLine("You won.\n");
+            playerScore++;
+        }
+        else if (playerChoice = "paper" && cpuChoice = "rock")
+        {
+            Console.WriteLine($"You chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+            Console.WriteLine("The CPU wins.\n");
+            cpuScore++;
+        }
+        else if (playerChoice = "paper" && cpuChoice = "paper")
+        {
+            Console.WriteLine($"You chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+            Console.WriteLine("Its a tie.\n");
+            
+        }
+        else if (playerChoice = "paper" && cpuChoice = "rock")
+        {
+            Console.WriteLine($"You chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+            Console.WriteLine("You won.\n");
+            playerScore++;
+        }
+        else if (playerChoice = "scissors" && cpuChoice = "paper")
+        {
+            Console.WriteLine($"You chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+            Console.WriteLine("The CPU wins.\n");
+            cpuScore++;
+        }
+        else if (playerChoice = "rock" && cpuChoice = "rock")
+        {
+            Console.WriteLine($"You chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+            Console.WriteLine("Its a tie.\n");
+            
+        }
+        else if (playerChoice = "rock" && cpuChoice = "scissors")
+        {
+            Console.WriteLine($"You chose {playerChoice} and the CPU chose {cpuChoice}.\n");
+            Console.WriteLine("You won.\n");
+            playerScore++;
+        }
+      
+        
         //putput the results
         // give winner a point 
 
