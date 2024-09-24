@@ -25,7 +25,7 @@ class rps {
         else if (isCorrect == "no")
         {
             Console.WriteLine("Welclcome to rock paper scissors! Please, tell me your name and hit ENTER.\n");      
-      playerName = Console.ReadLine(); 
+            playerName = Console.ReadLine(); 
         }
 
       Console.WriteLine("The rules are simple! First to 5 points wins! Each vicotry adds 1 point!\n");
