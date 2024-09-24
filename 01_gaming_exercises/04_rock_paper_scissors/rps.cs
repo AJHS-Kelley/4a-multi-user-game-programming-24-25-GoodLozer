@@ -87,7 +87,7 @@ class rps {
         else if (playerChoice == "paper" && cpuChoice == "rock")
         {
             Console.WriteLine($"You chose {playerChoice} and the CPU chose {cpuChoice}.\n");
-            Console.WriteLine("The CPU wins.\n");
+            Console.WriteLine("You won.\n");
             cpuScore++;
         }
         else if (playerChoice == "paper" && cpuChoice == "paper")
@@ -105,7 +105,7 @@ class rps {
         else if (playerChoice == "scissors" && cpuChoice == "paper")
         {
             Console.WriteLine($"You chose {playerChoice} and the CPU chose {cpuChoice}.\n");
-            Console.WriteLine("The CPU wins.\n");
+            Console.WriteLine("You won.\n");
             cpuScore++;
         }
         else if (playerChoice == "rock" && cpuChoice == "rock")
