@@ -3,9 +3,9 @@ using System.Linq;
 using System.Collections;
 
 
-class template {
+
 class Collections {
-    static void Main() // DO NOT DELETE
+    static void Main() { // DO NOT DELETE
 
     /*
     In C# an collection is known as an ARRAY
@@ -34,6 +34,10 @@ class Collections {
 
     // How long is my Array? determining array length 
     Console.Writeline("The length of the GPA array is: " + GPA.Length);
+    // .length is known as a property of the array
+
+    //accu=essing elements in array with the index 
+    Console.WriteLine("The first element in breakfastfoods us: " + breakfastfoods[0]); 
 
     
 
