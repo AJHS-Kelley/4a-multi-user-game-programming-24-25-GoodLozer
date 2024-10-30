@@ -1,0 +1,35 @@
+using System;
+class System.Ling;
+using System.Collections;
+
+
+class template {
+class 04_Collections {
+    static void Main() // DO NOT DELETE
+
+    /*
+    In C# an collection is known as an ARRAY
+    -- EACH ITEM IN THE ARRAY IS AN ELEMENT
+    -- NUMBER OF ELEMENTS IN THE ARRAY CANNOT BE CHANGED 
+    -- CONTENTS OF EACH ELEMENT CAN CHANGE
+    -- ARRAYS ARE ORDERED, MEANING EACH ITEM HAS A FIXED POSSITION 
+    -- POSSITION OF THE ELEMENT IS CALLED THE INDEX
+    -- FIRST ELEMENT IN INDEX IS 0
+    */
+
+    //DECLARING AND DEFINING AN ARRAY
+    string[] breakfastFoods = {"Pancake", "Waffle", "Eggs", "Bacon", "Grits"};
+    int[] testScore = {100, 99,98,97,96};
+    double[] GPA = {0.27D, 4.1D, 3.2D, 2.5, 2.2 };
+
+    //Print Array Contents -- All Elements on Single Line
+    Console.WriteLine("The e;ements of each array are;\n");
+    Console.WriteLine("breakfastFoods: \n" + String.Join(", ", breakfastFoods));
+    Console.WriteLine()
+
+ }
+} 
+
+
+
+    
