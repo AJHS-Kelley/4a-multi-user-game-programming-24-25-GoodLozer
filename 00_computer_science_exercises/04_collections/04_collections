@@ -4,7 +4,7 @@ using System.Collections;
 
 
 class template {
-class 04_Collections {
+class Collections {
     static void Main() // DO NOT DELETE
 
     /*
@@ -23,9 +23,9 @@ class 04_Collections {
     double[] GPA = {0.27D, 4.1D, 3.2D, 2.5, 2.2 };
 
     //Print Array Contents -- All Elements on Single Line
-    Console.WriteLine("The e;ements of each array are;\n");
+    Console.WriteLine("The elements of each array are;\n");
     Console.WriteLine("breakfastFoods: \n" + String.Join(", ", breakfastFoods));
-    Console.WriteLine()
+    Console.WriteLine();
 
  }
 } 
