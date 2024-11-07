@@ -1,4 +1,4 @@
-Collections example, v0.6
+//Collections example, v0.6
 using System;
 using System.Linq;
 using System.Collections;
@@ -84,12 +84,12 @@ in C# an collections is known as an ARRAY.
     Console.WriteLine(exampleArrList2[5]);
     //Inserting a specefic position in the ArrayList
     //Use .Insert(index, value)
-    //exampleArrList.Insert(3, "Ogres are like Onions\n")
-    //exampleArrList.Insert(0,-99) 
+    //exampleArrList.Insert(3, "Ogres are like Onions\n");
+    //exampleArrList.Insert(0,-99); 
     // .Remove(value) removes the FIRST OCCURENCE of the item from the ArrayList
     var newList = ArrayList()
     {
-        -10,10,15,-25,25
+        -10,10,15,-25,25,-15,33,56,45 
     } ;
     // Cosole.WriteLine(newList[0]);
     //newList.Remove(-10);
@@ -115,7 +115,7 @@ in C# an collections is known as an ARRAY.
 
     */
     // .Contains(Value) returns true if the list has cut that value
-    new playerInvitory = new ArrayList()
+    var playerInvitory = new ArrayList()
     {
         "Sword", "Sheild", "Bazooka", "1-Up Power-up", "Death Notebook", "Potato"
     }; 
