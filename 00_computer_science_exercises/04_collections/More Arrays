@@ -1,0 +1,59 @@
+using System;
+using System.Linq;
+using System.Collections;
+
+class MoreArrays {
+static void Main() {
+
+    string[] colors = {"Red", "Green", "Yellow", "Purple", "Pink"};
+    //Looping through arrays-- the old way
+    for (int 1 =0; i < colors.length;i++);
+    {
+        Console.WriteLine(colors[i]);
+    }
+
+       // Looping through Array Practius 
+    int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10,};
+    //Your Loop should itterate through the entire Array
+    //assign even or odd based on number printed
+
+    foreach (int i in numbers)
+    {
+		Console.WriteLine(i);
+		if (i % 2 == 0)
+		{
+			Console.WriteLine("Even");
+		}
+        else
+		{
+			Console.WriteLine("Odd");
+		}
+       
+
+    }
+
+    //Multidementional Arrays
+    // This class will only use 2 dimentonal Arrays
+    int[,] nums = { {1, 2, 3}, {69, 420, 69420}};
+
+    //Acessing items in 2d Arrays
+    Console.WriteLine(nums[0,1]);
+    Console.WriteLine(nums[1,1]);
+
+    //Changing elemements in 2d arrays
+    nums[1,1] = -1;
+	Console.WriteLine(nums[1,1]);
+
+    //Looping through Arrays
+
+
+
+
+
+
+
+
+
+
+    }
+}
